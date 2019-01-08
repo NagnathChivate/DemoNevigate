@@ -1,7 +1,5 @@
 # DemoNevigate
 
 =======Note===========
-Download the file and run index.html file
+index.html file run on localhost because i am using ajax
 
-
-neet to run this file on localhost because nevite to another page there using ajax
