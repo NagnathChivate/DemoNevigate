@@ -46,7 +46,7 @@
             $(".active").removeClass("active");
             $(liktxt).parent('.ulli').addClass("active");
                     if(txtval=="Index"){
-                        var urlpath='Index.html';
+                        var urlpath='HINDI.html';
                         callajax (urlpath);
                     }
                     if(txtval=="HINDI"){
