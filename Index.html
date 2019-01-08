@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Movie Listing</title>
+        <meta charset="windows-1252">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1, maximum-scale=1, viewport-fit=cover">  
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+         <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+         
+         <link href="NeoFolts.css" rel="stylesheet" type="text/css"/>
+         <script src="NowFlot.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <header>
+                <div class="srchdiv">
+                    <button class="btnmenu_01" onclick="btnmenu11()">
+                        <span class="glyphicon glyphicon-menu-hamburger menuicon"></span>
+                    </button>
+                    <div class="srch_div_containt">
+                        <input type="text" class="searchtextbox" placeholder="Search"/>
+                        <span class="glyphicon glyphicon-search iconsrch"></span>
+                    </div>
+                </div>
+            </header>
+            <div class="body-container">
+                <div class="leftSide">
+                    <ul class="ullist">
+                        <li class="ulli"><a href="#" onclick="Navigatelink(this)">HOME</a></li>
+                        <li class="ulli"><a href="#" onclick="Navigatelink(this)">HINDI</a></li>
+                        <li class="ulli"><a href="#" onclick="Navigatelink(this)">TELUGU</a></li>
+                         <li class="ulli"><a href="#" onclick="Navigatelink(this)">MARATHI</a></li>                        
+                    </ul>
+                </div>
+                <div class="rightside" style="text-align: right;">
+                    <div class="row">
+                        <div class="col-sm-12 pd">
+                            <label class="languagelbl">Home</label>
+                        </div>
+                    </div>
+                    <div class="maincontainer">                                 
+                        <div class="inner-container Page1">
+                            <div class="row">
+                                <div class="col-sm-6 pd indivrow">
+                                    <div class="ImgContainer">
+                                        <img src="NowImage/A1.jpg" class="posterImg" alt=""/>
+                                    </div>
+                                    <div class="txt-container">
+                                        <label class="movname">Poster API</label>
+                                        <p class="movidetail">
+                                            The Poster API is only available to patrons.
+                                            
+                                            Currently over 280,000 posters, updated daily with resolutions up to 2000x3000.
+                                        </p>
+                                        <div class="doenbtmdiv">
+                                            <button type="button" class="btn btn-default">
+                                                <span class="glyphicon glyphicon-download"></span>
+                                                Download
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 pd ">
+                                    <div class="ImgContainer">
+                                        <img src="NowImage/A2.jpg" class="posterImg" alt=""/>
+                                    </div>
+                                    <div class="txt-container">
+                                        <label class="movname">Poster API</label>
+                                        <p class="movidetail">
+                                            The Poster API is only available to patrons.
+                                            
+                                            Currently over 280,000 posters, updated daily with resolutions up to 2000x3000.
+                                        </p>
+                                        <div class="doenbtmdiv">
+                                            <button type="button" class="btn btn-default">
+                                                <span class="glyphicon glyphicon-download"></span>
+                                                Download
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inner-container Page2 ">
+                             <div class="row">
+                                <div class="col-sm-6 pd indivrow">
+                                    <div class="ImgContainer">
+                                        <img src="NowImage/A3.jpg" class="posterImg" alt=""/>
+                                    </div>
+                                    <div class="txt-container">
+                                        <label class="movname">Poster API</label>
+                                        <p class="movidetail">
+                                            The Poster API is only available to patrons.
+                                            
+                                            Currently over 280,000 posters, updated daily with resolutions up to 2000x3000.
+                                        </p>
+                                        <div class="doenbtmdiv">
+                                            <button type="button" class="btn btn-default">
+                                                <span class="glyphicon glyphicon-download"></span>
+                                                Download
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 pd">
+                                    <div class="ImgContainer">
+                                        <img src="NowImage/A5.jpg" class="posterImg" alt=""/>
+                                    </div>
+                                    <div class="txt-container">
+                                        <label class="movname">Poster API</label>
+                                        <p class="movidetail">
+                                            The Poster API is only available to patrons.
+                                            
+                                            Currently over 280,000 posters, updated daily with resolutions up to 2000x3000.
+                                        </p>
+                                        <div class="doenbtmdiv">
+                                            <button type="button" class="btn btn-default">
+                                                <span class="glyphicon glyphicon-download"></span>
+                                                Download
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inner-container Page3">
+                             <div class="row">
+                                <div class="col-sm-6 pd indivrow">
+                                    <div class="ImgContainer">
+                                        <img src="NowImage/A6.jpg" class="posterImg" alt=""/>
+                                    </div>
+                                    <div class="txt-container">
+                                        <label class="movname">Poster API</label>
+                                        <p class="movidetail">
+                                            The Poster API is only available to patrons.
+                                            
+                                            Currently over 280,000 posters, updated daily with resolutions up to 2000x3000.
+                                        </p>
+                                        <div class="doenbtmdiv">
+                                            <button type="button" class="btn btn-default">
+                                                <span class="glyphicon glyphicon-download"></span>
+                                                Download
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 pd">
+                                    <div class="ImgContainer">
+                                        <img src="NowImage/A7.jpg" class="posterImg" alt=""/>
+                                    </div>
+                                    <div class="txt-container">
+                                        <label class="movname">Poster API</label>
+                                        <p class="movidetail">
+                                            The Poster API is only available to patrons.
+                                            
+                                            Currently over 280,000 posters, updated daily with resolutions up to 2000x3000.
+                                        </p>
+                                        <div class="doenbtmdiv">
+                                            <button type="button" class="btn btn-default">
+                                                <span class="glyphicon glyphicon-download"></span>
+                                                Download
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                       </div>
+                        <div class="inner-container Page4">
+                             <div class="row">
+                                <div class="col-sm-6 pd indivrow">
+                                    <div class="ImgContainer">
+                                        <img src="NowImage/A8.jpg" class="posterImg" alt=""/>
+                                    </div>
+                                    <div class="txt-container">
+                                        <label class="movname">Poster API</label>
+                                        <p class="movidetail">
+                                            The Poster API is only available to patrons.
+                                            
+                                            Currently over 280,000 posters, updated daily with resolutions up to 2000x3000.
+                                        </p>
+                                        <div class="doenbtmdiv">
+                                            <button type="button" class="btn btn-default">
+                                                <span class="glyphicon glyphicon-download"></span>
+                                                Download
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 pd">
+                                    <div class="ImgContainer">
+                                        <img src="NowImage/A1.jpg" class="posterImg" alt=""/>
+                                    </div>
+                                    <div class="txt-container">
+                                        <label class="movname">Poster API</label>
+                                        <p class="movidetail">
+                                            The Poster API is only available to patrons.
+                                            
+                                            Currently over 280,000 posters, updated daily with resolutions up to 2000x3000.
+                                        </p>
+                                        <div class="doenbtmdiv">
+                                            <button type="button" class="btn btn-default">
+                                                <span class="glyphicon glyphicon-download"></span>
+                                                Download
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inner-container Page5">
+                             <div class="row">
+                                <div class="col-sm-6 pd indivrow">
+                                    <div class="ImgContainer">
+                                        <img src="NowImage/A3.jpg" class="posterImg" alt=""/>
+                                    </div>
+                                    <div class="txt-container">
+                                        <label class="movname">Poster API</label>
+                                        <p class="movidetail">
+                                            The Poster API is only available to patrons.
+                                            
+                                            Currently over 280,000 posters, updated daily with resolutions up to 2000x3000.
+                                        </p>
+                                        <div class="doenbtmdiv">
+                                            <button type="button" class="btn btn-default">
+                                                <span class="glyphicon glyphicon-download"></span>
+                                                Download
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 pd">
+                                    <div class="ImgContainer">
+                                        <img src="NowImage/A6.jpg" class="posterImg" alt=""/>
+                                    </div>
+                                    <div class="txt-container">
+                                        <label class="movname">Poster API</label>
+                                        <p class="movidetail">
+                                            The Poster API is only available to patrons.
+                                            
+                                            Currently over 280,000 posters, updated daily with resolutions up to 2000x3000.
+                                        </p>
+                                        <div class="doenbtmdiv">
+                                            <button type="button" class="btn btn-default">
+                                                <span class="glyphicon glyphicon-download"></span>
+                                                Download
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                       </div> 
+                    </div>
+                    <button class="btn btn-primary npbtn prev" id="prev">Prev</button>
+                    <button class="btn btn-primary npbtn" id="next" style="margin-right: 5%;">Next</button>
+                </div>
+            </div>            
+        </div>
+        
+        <script type="text/javascript">
+             var h1 = window.innerHeight;
+            $('.body-container').css("height",parseInt(h1)+-52+"px");
+            loadnxtprv();
+        </script>
+         
+    </body>
+</html>
