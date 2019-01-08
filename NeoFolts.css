@@ -1,0 +1,298 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 5 Jan, 2019, 1:27:29 AM
+    Author     : Nagnath
+*/
+             html,body{height: 100%;color: #000000}
+             body{
+/*                 background: #eaeaea none;*/
+                 background: #F1F1F1 none;
+             }
+             .pd, .container-fluid{padding: 0px;}
+             .row{margin: 0px;}
+             .maincontainer{
+                 text-align: left;
+                    display: block;
+                    width: 90%;
+                    margin: 0px auto;
+                    background: transparent;
+                    overflow: hidden;
+                    margin-bottom: 10px;
+                    transition: transform .6s ease-in-out;
+                    -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+                    perspective: 1000px;
+                    margin-top: 5px;
+             }
+             
+             .maincontainer .inner-container{
+                 height:300px;
+                 width: 100%;
+                 background: #FFFFFF;
+                 -webkit-box-shadow: 0 1px 1px 1px rgba(127,127,127,0.3);
+                box-shadow: 0 1px 1px 1px rgba(127,127,127,0.3);
+             transition: transform .6s ease-in-out;
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+                perspective: 1000px;
+             }
+             
+
+/*             .maincontainer .Page1{
+                 background: white;
+             }
+             .maincontainer .Page2{
+                 background: red;
+             }
+             .maincontainer .Page3{
+                 background: pink;
+             }
+             .maincontainer .Page4{
+                 background: black;
+             }
+             .maincontainer .Page5{
+                 background: green;
+             }
+             .maincontainer .Page6{
+                 background: purple;
+             }
+             .maincontainer .cls7{
+                 background: yellow;
+             }*/
+             
+            
+            @-webkit-keyframes mymove { 0% { left:99%; right:0%;} 99% { left:0px; right:0px;}}
+            @keyframes mymove { 0% { left:99%; right:0%;} 99% { left:0px; right:0px;}}
+            .Template,.Activeblock{ 
+                cursor: pointer; 
+                height:100%;
+                overflow-x: hidden;               
+                position: relative; 
+                -o-animation: mymove .5s infinite;
+                -moz-animation: mymove .5s infinite; -webkit-animation: mymove .5s infinite;
+                animation: mymove .5s infinite; -moz-animation-iteration-count:1;
+                -o-animation-iteration-count:1; -webkit-animation-iteration-count:1;
+                animation-iteration-count:1; -o-animation-fill-mode: forwards;
+                -moz-animation-fill-mode: forwards; -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards; 
+                overflow: hidden;
+            } 
+            
+            /*            left to right*/
+             .backActiveblock{    
+                -webkit-transition: all .5s infinite;
+                -moz-transition: all .5s infinite;
+                -o-transition: all .5s infinite;
+                -ms-transition: all .3s infinite;
+                position:relative;
+                -webkit-animation: anim .5s infinite;
+                animation: anim .5s infinite;
+/*                animation-direction: alternate;*/
+                -webkit-animation-timing-function: linear; /* Chrome, Safari, Opera */
+                animation-timing-function: linear;
+                -moz-animation-iteration-count:1;
+                o-animation-iteration-count:1; -webkit-animation-iteration-count:1;
+                animation-iteration-count:1;
+                -moz-animation-fill-mode: forwards; -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards; 
+            }
+            @-webkit-keyframes anim {
+                from {left: -100%; }
+                to {left:0%;}
+            }
+            @keyframes anim {
+                from {left: -100%;}
+                to {left:0%;}
+            }
+            header{
+                height:50px;
+                background: white;
+                box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+            }
+            .leftSide{
+                height: 98.5%;
+                width: 15%;
+                display: inline-block;
+                float: left;
+                background: #FDFDFD;
+                margin-top: 2px;
+            }
+            .leftSide .ullist{
+                margin: 0px;
+                padding: 0px;
+            }
+            .leftSide .ullist .ulli{
+              list-style: none;
+                padding: 0px;
+                font-size: 16px;
+                color: #000;
+                width: 100%;
+                border-bottom: 1px solid #F7F7F7;
+            }
+            .leftSide .ullist .ulli.active{
+                background: #EDEDED;
+            }
+            .leftSide .ullist .ulli:hover{
+                background: #F0F0F0;
+                cursor: pointer;
+            }
+            .leftSide .ullist .ulli a{
+                color: #000;
+                padding: 10px 6px;
+                display: block;
+            }
+            
+            .leftSide .ullist .ulli a:hover{
+                text-decoration: none;
+            }
+            .rightside{
+                float: left;
+                width: 85%;
+                display: block;
+            }
+            .languagelbl{
+                margin: 0px;
+                    line-height: normal;
+                    display: block;
+                    font-size: 20px;
+                    color: #000;
+                    text-align: left;
+                    padding: 5px 8px;
+                    border-bottom: 0px;
+                    padding-left: 5%;
+                    margin-top: 20px;
+            }
+            .npbtn{
+                outline: none;
+                border-radius: 2px;
+                width: 100px;
+                margin: 10px 2px;
+            }
+
+            .Template.Pagehide{ display: none;  }
+            .rightside{
+                overflow: hidden;
+            }
+            
+            .maincontainer .inner-container .ImgContainer{
+                width: 220px;
+                display:table-cell;
+            }
+            .maincontainer .inner-container .txt-container{
+                 display:table-cell;
+                 display: table-cell;
+                vertical-align: top;
+                padding: 10px 2px;
+            }
+            .maincontainer .inner-container .ImgContainer .posterImg{
+                width: 200px;
+                height: 280px;
+                margin: 10px;
+            }
+            .maincontainer .inner-container .txt-container .movname{
+                margin: 0px;
+                font-size: 20px;
+                width: 100%;
+            }
+            .maincontainer .inner-container .txt-container .movidetail{
+                
+            }
+           .maincontainer .inner-container .txt-container .doenbtmdiv{
+                padding-top: 20px;
+                text-align: center;
+            }
+            .maincontainer .inner-container .txt-container .doenbtmdiv .btndnlod{
+                position: relative;
+                padding-left: 30px;
+                outline: none;
+            }
+            .maincontainer .inner-container .txt-container .doenbtmdiv .btndnlod .icn_01{
+                float: left;
+                margin: 1px;
+                position: absolute;
+                left: 10px;
+                top: 7px;
+            }
+            .srchdiv{
+                padding: 5px;
+                width: 100%;
+                display: block;
+            }
+            .srchdiv .srch_div_containt{
+                width: 500px;
+                margin: 0px auto;
+                position: relative;
+                border: 1px solid #d3d3d3;
+                border-radius: 3px;
+                margin-top: 3px;
+            }
+            .srchdiv .searchtextbox{
+                width: 96%;
+                outline: none;
+                padding: 5px;
+                border: 0px;
+                border-radius: 5px;
+                height: 30px;
+            }
+            .srchdiv .srch_div_containt .iconsrch{
+                position: absolute;
+                right: 0px;
+                height: 30px;
+                border-left: 1px solid;
+                padding: 6px;
+                width: 40px;
+                text-align: center;
+                top: 0px;
+                color: #C8C8C8;
+                font-size: 18px;
+                cursor: pointer;
+            }
+            .srchdiv .btnmenu_01{
+                position: absolute;
+                width: 40px;
+                font-size: 24px;
+                background: transparent;
+                border: 0px;
+                color: #146F9F;
+                outline: none;
+                padding-top: 7px;
+            }
+            .srchdiv .btnmenu_01 .menuicon{
+                
+            }
+            @media screen and (max-width:900px){
+                .leftSide{display: none ;}
+                .rightside{width: 100%;}
+            } 
+            @media screen and (max-width:768px){
+                .maincontainer .inner-container{height: auto;}
+                .maincontainer .inner-container .ImgContainer .posterImg{height: 180px;}
+                .indivrow{border-bottom: 1px solid #d3d3d3;}
+                .leftSide {width: 180px;position: absolute;z-index: 99999999;
+                            box-shadow: 0px 12px 11px rgba(0,0,0,0.4);border-right: 1px solid #d3d3d3;
+                }
+            } 
+            
+            @media screen and (max-width:620px){
+                 .srchdiv .srch_div_containt{width:300px;}
+                 .maincontainer{width: 95%;}
+            }
+             @media screen and (max-width:420px){
+                 .maincontainer .inner-container .txt-container .movname{font-size: 16px;}
+                 .maincontainer .inner-container .txt-container .movidetail{font-size: 13px;}
+                 .srchdiv .srch_div_containt{width:300px;}
+                 .maincontainer .inner-container .ImgContainer{vertical-align: middle;width: 100px;}
+                 .maincontainer .inner-container .ImgContainer .posterImg{height: 110px;width: 100px}
+                 .maincontainer .inner-container .txt-container .doenbtmdiv{
+                    padding-top: 0px;
+                    text-align: right;
+                    padding-right: 10px;
+                 }
+            }
+            @media screen and (max-width:380px){
+                 .srchdiv .srch_div_containt{width:200px;float: right;}
+            }
