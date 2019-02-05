@@ -1,0 +1,48 @@
+{
+  "EmplDetail": [
+    {
+      "id":"1",
+      "name":"Nagnath",
+      "gender":"Male",
+      "contactPreferance":"Mobile",
+      "email":"Nagnath.chivate@gmail.com",
+      "dateOfBirth":"new Date('04/05/190')",
+      "department":"IT",
+      "isActive":"true",
+      "photoPath":"assets/Images/mark.png"
+    },
+    {
+      "id":"2",
+      "name":"Kavita",
+      "gender":"FeMale",
+      "contactPreferance":"Mobile",
+      "email":"Nagnath.chivate@gmail.com",
+      "dateOfBirth":"new Date('04/05/190')",
+      "department":"IT",
+      "isActive":"true",
+      "photoPath":"assets/Images/mary.png"
+    },
+    {
+    "id":"3",
+    "name":"Maroti",
+    "gender":"Male",
+    "contactPreferance":"Mobile",
+    "email":"Nagnath.chivate@gmail.com",
+    "dateOfBirth":"new Date('04/05/190')",
+    "department":"IT",
+    "isActive":"true",
+    "photoPath":"assets/Images/mark.png"
+    },
+    {
+      "id":"4",
+      "name":"FMavhadevi",
+      "gender":"FeMale",
+      "contactPreferance":"Mobile",
+      "email":"Nagnath.chivate@gmail.com",
+      "dateOfBirth":"new Date('04/05/190')",
+      "department":"IT",
+      "isActive":"true",
+      "photoPath":"assets/Images/mary.png"  
+    }
+  ]
+}
